@@ -1,0 +1,90 @@
+plugins {
+	id 'fabric-loom' version '1.4-SNAPSHOT'
+	id 'maven-publish'
+}
+
+version = project.mod_version
+
+base {
+	archivesName = project.archives_base_name
+}
+
+sourceSets {
+    modding
+    main {
+        compileClasspath += sourceSets.modding.output
+        runtimeClasspath += sourceSets.modding.output
+        resources {
+            srcDirs += ["src/generated/resources"]
+        }
+    }
+    test{
+        compileClasspath += sourceSets.modding.output
+        runtimeClasspath += sourceSets.modding.output
+    }
+}
+
+configurations {
+    moddingImplementation.extendsFrom(compileClasspath)
+}
+
+allprojects {
+    group = project.maven_group
+    java {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
+
+    tasks.compileJava {
+        options.encoding = 'utf-8'
+    }
+    tasks.compileTestJava {
+        options.encoding = 'utf-8'
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.1'
+
+    // To change the versions see the gradle.properties file
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+    // Fabric API. This is technically optional, but you probably want it anyway.
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+}
+
+loom {
+    accessWidenerPath = file("src/modding/resources/internal.accesswidener")
+    runs {
+        datagen {
+            client()
+            property "fabric-api.datagen"
+            property "fabric-api.datagen.output-dir", file("src/generated/resources").absolutePath
+        }
+        client {
+            programArgs "--username", "${player_name}"
+        }
+    }
+}
+
+
+processResources {
+	inputs.property "version", project.version
+
+	filesMatching("fabric.mod.json") {
+        expand "id": mod_id, "version": project.version,"name": mod_name,"description": mod_description
+	}
+
+    from('src/modding/resources')
+}
+
+jar {
+	from("LICENSE") {
+		rename { "${it}_${project.base.archivesName.get()}"}
+	}
+}
