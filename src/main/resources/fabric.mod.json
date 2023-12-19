@@ -18,7 +18,7 @@
 		"server": ["com.example.ExampleServer"],
         "fabric-datagen": ["com.stupidcoderx.modding.datagen.DataGenEntryPoint"]
     },
-	"mixins": ["modid.mixins.json"],
+	"mixins": ["internal.mixin.json"],
 	"depends": {
 		"fabricloader": ">=0.14.18",
 		"minecraft": "~1.20.1",

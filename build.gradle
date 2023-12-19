@@ -35,7 +35,7 @@ allprojects {
         targetCompatibility = JavaVersion.VERSION_17
         toolchain {
             languageVersion = JavaLanguageVersion.of(17)
-        }
+        }"internal.mixin.json", "modid.mixins.json"
     }
 
     tasks.compileJava {
