@@ -14,8 +14,8 @@
 	"license": "CC0-1.0",
 	"environment": "*",
 	"entrypoints": {
-		"client": ["com.example.ExampleClient"],
-		"server": ["com.example.ExampleServer"],
+		"client": ["com.example.core.ExampleClient"],
+		"server": ["com.example.core.ExampleServer"],
         "fabric-datagen": ["com.stupidcoderx.modding.datagen.DataGenEntryPoint"]
     },
 	"mixins": ["internal.mixin.json"],

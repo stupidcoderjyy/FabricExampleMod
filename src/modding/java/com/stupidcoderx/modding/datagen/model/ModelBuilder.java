@@ -2,6 +2,7 @@ package com.stupidcoderx.modding.datagen.model;
 
 import com.google.common.base.Preconditions;
 import com.google.gson.JsonObject;
+import com.stupidcoderx.modding.core.Mod;
 import com.stupidcoderx.modding.datagen.model.elements.Structure;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.Nullable;
@@ -10,10 +11,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ModelBuilder extends ModelFile{
-    private final Map<String, ResourceLocation> textures = new HashMap<>();
+    public final Map<String, ResourceLocation> textures = new HashMap<>();
     private final Map<String, Display> transforms = new HashMap<>();
     private final String pathPrefix;
     private Structure structure;
+    private ResourceLocation loaderLoc;
     @Nullable
     private ModelFile parent;
 
@@ -23,7 +25,7 @@ public class ModelBuilder extends ModelFile{
     }
 
     public ModelBuilder parent(ResourceLocation loc) {
-        this.parent = new ModelFile(expandLoc(pathPrefix, loc));
+        this.parent = new ModelFile(Mod.expandLoc(pathPrefix, loc));
         return this;
     }
 
@@ -32,12 +34,12 @@ public class ModelBuilder extends ModelFile{
         return this;
     }
 
-    public ModelBuilder parent(String loc) {
-        return parent(new ResourceLocation(loc));
+    public ModelBuilder parent(String fullLoc) {
+        return parent(new ResourceLocation(fullLoc));
     }
 
     public ModelBuilder texture(String key, ResourceLocation loc) {
-        loc = expandLoc(pathPrefix, loc);
+        loc = Mod.expandLoc(pathPrefix, loc);
         textures.put(key, loc);
         return this;
     }
@@ -57,16 +59,17 @@ public class ModelBuilder extends ModelFile{
         return this;
     }
 
-    public static ResourceLocation expandLoc(String prefix, ResourceLocation loc) {
-        String path = loc.getPath();
-        if (path.indexOf('/') > 0) {
-            return loc;
-        }
-        return new ResourceLocation(loc.getNamespace(), prefix + "/" + path);
+    public ModelBuilder loader(String loaderPath) {
+        this.loaderLoc = Mod.modLoc(loaderPath);
+        return this;
     }
 
     protected JsonObject toJson() {
         JsonObject root = new JsonObject();
+        if (loaderLoc != null) {
+            root.addProperty("loader", loaderLoc.toString());
+            return root;
+        }
         if (parent != null) {
             root.addProperty("parent", parent.location.toString());
         }
