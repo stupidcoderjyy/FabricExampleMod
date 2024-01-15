@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9a9f385d-898e-437b-bfef-189cf6d84fff" name="Changes" comment="Fabric-1.20.1-0.1.2 楼梯、台阶和墙方块的快捷生成">
+      <change beforePath="$PROJECT_DIR$/run/.fabric/processedMods/indium-1.0.25+mc1.20.1-64b5720b4b825f21.jar" beforeDir="false" afterPath="$PROJECT_DIR$/run/.fabric/processedMods/indium-1.0.25+mc1.20.1-64b5720b4b825f21.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.fabric/processedMods/lazydfu-0.1.3-64b5720b4b825f21.jar" beforeDir="false" afterPath="$PROJECT_DIR$/run/.fabric/processedMods/lazydfu-0.1.3-64b5720b4b825f21.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.fabric/processedMods/sodium-0.5.2-64b5720b4b825f21.jar" beforeDir="false" afterPath="$PROJECT_DIR$/run/.fabric/processedMods/sodium-0.5.2-64b5720b4b825f21.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/fabric/indigo-renderer.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/fabric/indigo-renderer.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/indium-renderer.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/indium-renderer.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/547117de5c7f4a65ccc18d7e1feddf12bcbe0e80" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/60bf9d77386e09d08781cdc50499961304e33d75" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/7803a24e682b33bb1900902b36c30c930c86a9b5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/ac743e558ef137657ee3a04c1cbfcc07f6c2bbea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/afe76a38982477a67c6a615e780245eca26620ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/d08b54ad14df78e078f3cb33397c819a2d6bc600" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/example/blockstates/example_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/example/lang/zh_cn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/example/models/block/example_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/example/models/item/example_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/core/ExampleMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/core/ExampleMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/registry/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/registry/ModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/client/BuiltInModelRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/client/render/IModCustomModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/core/DataGenOnly.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/core/IRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/core/Mod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/core/ModLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/core/RegistryList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/DataGenEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/DataProviders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/ModDataProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/ResourceType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/blockstate/BlockStateProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/blockstate/IBuilderElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/blockstate/Model.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/blockstate/multipart/ListPredicate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/blockstate/multipart/ModelPredicate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/blockstate/multipart/MultiPartBlockStateBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/blockstate/variants/IStateModelCondition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/blockstate/variants/VariantType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/blockstate/variants/VariantsBlockStateBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/blockstate/variants/VariantsState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/lang/ILocalizationEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/lang/LocalizationProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/model/Display.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/model/ModelBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/model/ModelFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/model/ModelProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/model/elements/Cube.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/model/elements/Direction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/model/elements/Face.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/model/elements/IBasePointStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/model/elements/ICubeCreateStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/model/elements/SeparateObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/model/elements/SeparationConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/model/elements/SeparationResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/model/elements/Structure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/recipe/ModRecipe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/recipe/RecipeDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/recipe/RecipeProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/tag/BlockTag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/tag/Tag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/datagen/tag/TagsProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/element/ModCreativeTab.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/element/block/BlockDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/element/block/BlockProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/element/block/BlockPropertyManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/element/block/ExtendedBlockDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/element/block/SlabBlockDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/element/block/StairsBlockDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/element/block/WallBlockDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/element/item/IIntrinsicEnchantItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/element/item/ItemDef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/element/item/ToolType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/mixin/EnchantmentHelperMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/util/DimensionalBlockPos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/util/JsonUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/util/ReflectionUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/util/serialize/ArrayVal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/util/serialize/ContainerVal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/util/serialize/Field.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/util/serialize/IntVal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/util/serialize/NumVal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/util/serialize/Serializable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/util/serialize/StringVal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/util/serialize/Val.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/java/com/stupidcoderx/modding/util/serialize/ValType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modding/resources/internal.mixin.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/modding/resources/internal.mixin.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Zkf93Ue45UUyxOlStTaCvs3Bba" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Fabric/1.20.1",
+    "last_opened_file_path": "C:/Users/stupid_coder_jyy/Desktop/Minecraft/FabricExampleMod/src/modding/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propDebugger"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\stupid_coder_jyy\Desktop\Minecraft\FabricExampleMod\src\modding\resources" />
+      <recent name="C:\Users\stupid_coder_jyy\Desktop\Minecraft\FabricExampleMod\src\modding\java" />
+      <recent name="C:\Users\stupid_coder_jyy\Desktop\Minecraft\FabricExampleMod\src\modding" />
+      <recent name="C:\Users\stupid_coder_jyy\Desktop\Minecraft\FabricExampleMod\src\main\resources\assets\example\textures\block" />
+      <recent name="C:\Users\stupid_coder_jyy\Desktop\Minecraft\FabricExampleMod\src\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Minecraft Client" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a9f385d-898e-437b-bfef-189cf6d84fff" name="Changes" comment="" />
+      <created>1702970842836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702970842836</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Fabric-1.20.1-0.1 物品 自定义配方 基本数据生成">
+      <option name="closed" value="true" />
+      <created>1702973113067</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702973113067</updated>
+    </task>
+    <task id="LOCAL-00002" summary="修复了附魔Mixin失效的问题">
+      <option name="closed" value="true" />
+      <created>1702983791090</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702983791090</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fabric-1.20.1-0.1.1 楼梯、台阶和墙方块的快捷生成">
+      <option name="closed" value="true" />
+      <created>1703472862622</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703472862622</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fabric-1.20.1-0.1.1 楼梯、台阶和墙方块的快捷生成">
+      <option name="closed" value="true" />
+      <created>1703473371810</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703473371810</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fabric-1.20.1-0.1 物品 自定义配方 基本数据生成" />
+    <MESSAGE value="修复了附魔Mixin失效的问题" />
+    <MESSAGE value="Fabric-1.20.1-0.1.1 楼梯、台阶和墙方块的快捷生成" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fabric-1.20.1-0.1.1 楼梯、台阶和墙方块的快捷生成" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

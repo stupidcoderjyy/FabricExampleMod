@@ -6,7 +6,9 @@
   "mixins": [
       "EnchantmentHelperMixin"
   ],
-  "client": [],
+  "client": [
+      "VariantDeserializerMixin"
+  ],
   "server": [],
   "injectors": {
     "defaultRequire": 1

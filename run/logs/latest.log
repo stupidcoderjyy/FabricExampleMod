@@ -1,5 +1,5 @@
-[10:50:36] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.1 with Fabric Loader 0.14.21
-[10:50:36] [main/INFO] (FabricLoader) Loading 49 mods:
+[00:31:40] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.1 with Fabric Loader 0.14.21
+[00:31:40] [main/INFO] (FabricLoader) Loading 49 mods:
 	- example 1.0.0
 	- fabric-api 0.85.0+1.20.1
 	- fabric-api-base 0.4.29+b04edc7a77
@@ -49,17 +49,18 @@
 	- lazydfu 0.1.3
 	- minecraft 1.20.1
 	- sodium 0.5.2
-[10:50:40] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/stupid_coder_jyy/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/8d31fb97c3e0cd7c8dad3441851c523bcfae6d8e/sponge-mixin-0.12.5+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
-[10:50:40] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[10:50:41] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[10:50:41] [main/INFO] (Sodium) Loaded configuration file for Sodium: 41 options available, 0 override(s) found
-[10:50:42] [main/INFO] (Sodium-GraphicsAdapterProbe) Searching for graphics cards...
-[10:50:42] [main/INFO] (Sodium-GraphicsAdapterProbe) Found graphics card: GraphicsAdapterInfo[vendor=NVIDIA, name=NVIDIA Quadro P620, version=DriverVersion=31.0.15.4601]
-[10:50:42] [main/INFO] (Sodium-GraphicsAdapterProbe) Found graphics card: GraphicsAdapterInfo[vendor=INTEL, name=Intel(R) UHD Graphics, version=DriverVersion=30.0.101.1122]
-[10:50:42] [main/WARN] (Sodium-Workarounds) Sodium has applied one or more workarounds to prevent crashes or other issues on your system: [NVIDIA_THREADED_OPTIMIZATIONS]
-[10:50:42] [main/WARN] (Sodium-Workarounds) This is not necessarily an issue, but it may result in certain features or optimizations being disabled. You can sometimes fix these issues by upgrading your graphics driver.
-[10:50:54] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[10:50:55] [Render thread/ERROR] (Minecraft) Failed to verify authentication
+[00:31:44] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/stupid_coder_jyy/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/8d31fb97c3e0cd7c8dad3441851c523bcfae6d8e/sponge-mixin-0.12.5+mixin.0.8.5.jar Service=Knot/Fabric Env=CLIENT
+[00:31:44] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[00:31:44] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_16
+[00:31:44] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[00:31:45] [main/INFO] (Sodium) Loaded configuration file for Sodium: 41 options available, 0 override(s) found
+[00:31:45] [main/INFO] (Sodium-GraphicsAdapterProbe) Searching for graphics cards...
+[00:31:46] [main/INFO] (Sodium-GraphicsAdapterProbe) Found graphics card: GraphicsAdapterInfo[vendor=NVIDIA, name=NVIDIA Quadro P620, version=DriverVersion=31.0.15.4601]
+[00:31:46] [main/INFO] (Sodium-GraphicsAdapterProbe) Found graphics card: GraphicsAdapterInfo[vendor=INTEL, name=Intel(R) UHD Graphics, version=DriverVersion=30.0.101.1122]
+[00:31:46] [main/WARN] (Sodium-Workarounds) Sodium has applied one or more workarounds to prevent crashes or other issues on your system: [NVIDIA_THREADED_OPTIMIZATIONS]
+[00:31:46] [main/WARN] (Sodium-Workarounds) This is not necessarily an issue, but it may result in certain features or optimizations being disabled. You can sometimes fix these issues by upgrading your graphics driver.
+[00:31:57] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[00:31:58] [Render thread/ERROR] (Minecraft) Failed to verify authentication
 com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:56) ~[authlib-4.0.43.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:156) ~[authlib-4.0.43.jar:?]
@@ -77,78 +78,108 @@ Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 4
 	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:48) ~[authlib-4.0.43.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:129) ~[authlib-4.0.43.jar:?]
 	... 9 more
-[10:50:55] [Render thread/INFO] (Minecraft) Setting user: dev
-[10:50:55] [Render thread/INFO] (Indigo) [Indigo] Different rendering plugin detected; not applying Indigo.
-[10:50:55] [Render thread/INFO] (example/client) begin init: example, registries: [creativeTab, item, recipe, builtInModel]
-[10:50:55] [Render thread/INFO] (example/client) finish init: example, took 28ms
-[10:50:56] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.1 SNAPSHOT
-[10:50:56] [Render thread/WARN] (Sodium-NvidiaWorkarounds) Attempting to apply workarounds for the NVIDIA Graphics Driver...
-[10:50:56] [Render thread/WARN] (Sodium-NvidiaWorkarounds) If the game crashes immediately after this point, please make a bug report: https://github.com/CaffeineMC/sodium-fabric/issues
-[10:50:56] [Render thread/INFO] (Sodium-NvidiaWorkarounds) ... Successfully applied workarounds for the NVIDIA Graphics Driver!
-[10:50:58] [Render thread/INFO] (Sodium-PostlaunchChecks) OpenGL Vendor: NVIDIA Corporation
-[10:50:58] [Render thread/INFO] (Sodium-PostlaunchChecks) OpenGL Renderer: Quadro P620/PCIe/SSE2
-[10:50:58] [Render thread/INFO] (Sodium-PostlaunchChecks) OpenGL Version: 3.2.0 NVIDIA 546.01
-[10:50:59] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric (fabric-sound-api-v1, fabric-crash-report-info-v1, fabric-content-registries-v0, fabric-key-binding-api-v1, fabric-mining-level-api-v1, lazydfu, fabric-item-api-v1, fabric-convention-tags-v1, fabric-resource-loader-v0, fabric-api, fabric-gametest-api-v1, fabric-lifecycle-events-v1, fabric-block-api-v1, fabric-renderer-indigo, fabric-screen-api-v1, fabric-rendering-v1, fabric-data-generation-api-v1, fabric-networking-api-v1, fabric-client-tags-api-v1, fabric-rendering-fluids-v1, fabricloader, fabric-screen-handler-api-v1, fabric-registry-sync-v0, fabric-resource-conditions-api-v1, indium, fabric-loot-api-v2, fabric-message-api-v1, fabric-particles-v1, fabric-transfer-api-v1, fabric-item-group-api-v1, fabric-rendering-data-attachment-v1, fabric-api-base, fabric-entity-events-v1, fabric-dimensions-v1, fabric-game-rule-api-v1, fabric-command-api-v2, example, fabric-renderer-api-v1, fabric-events-interaction-v0, fabric-api-lookup-api-v1, fabric-biome-api-v1, sodium, fabric-recipe-api-v1, fabric-blockrenderlayer-v1, fabric-transitive-access-wideners-v1, fabric-object-builder-api-v1, fabric-models-v0)
-[10:51:00] [Worker-Main-1/INFO] (Minecraft) Found unifont_all_no_pua-15.0.06.hex, loading
-[10:51:00] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
-[10:51:01] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[10:51:01] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[10:51:01] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek(R) Audio)
-[10:51:01] [Render thread/INFO] (Minecraft) Sound engine started
-[10:51:02] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/blocks.png-atlas
-[10:51:02] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/signs.png-atlas
-[10:51:02] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
-[10:51:02] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
-[10:51:02] [Render thread/INFO] (Minecraft) Created: 1024x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
-[10:51:02] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/chest.png-atlas
-[10:51:02] [Render thread/INFO] (Minecraft) Created: 128x64x0 minecraft:textures/atlas/decorated_pot.png-atlas
-[10:51:02] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/shulker_boxes.png-atlas
-[10:51:02] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/beds.png-atlas
-[10:51:02] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[10:51:02] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[10:51:02] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[10:51:02] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[10:51:09] [Render thread/INFO] (Minecraft) Loaded 7 recipes
-[10:51:09] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
-[10:51:10] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 3.032 ms
-[10:51:10] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20.1
-[10:51:10] [Server thread/INFO] (Minecraft) Generating keypair
-[10:51:11] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[10:51:13] [Render thread/INFO] (Minecraft) 准备生成区域中：0%
-[10:51:14] [Render thread/INFO] (Minecraft) 准备生成区域中：0%
-[10:51:14] [Render thread/INFO] (Minecraft) 准备生成区域中：0%
-[10:51:14] [Render thread/INFO] (Minecraft) 准备生成区域中：0%
-[10:51:14] [Render thread/INFO] (Minecraft) 准备生成区域中：0%
-[10:51:14] [Render thread/INFO] (Minecraft) 准备生成区域中：0%
-[10:51:14] [Render thread/INFO] (Minecraft) 准备生成区域中：0%
-[10:51:15] [Render thread/INFO] (Minecraft) 准备生成区域中：89%
-[10:51:15] [Render thread/INFO] (Minecraft) Time elapsed: 3541 ms
-[10:51:15] [Server thread/INFO] (Minecraft) Changing view distance to 16, from 10
-[10:51:15] [Server thread/INFO] (Minecraft) Changing simulation distance to 5, from 0
-[10:51:17] [Server thread/INFO] (Minecraft) dev[local:E:536e37d3] logged in with entity id 140 at (992.4974211184951, 126.0, 1354.1305496298573)
-[10:51:17] [Server thread/INFO] (Minecraft) dev加入了游戏
-[10:51:17] [Render thread/INFO] (ChunkBuilder) Started 6 worker threads
-[10:51:18] [Render thread/INFO] (Minecraft) Loaded 12 advancements
-[10:51:58] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[10:51:58] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[模组开发演示]'/minecraft:overworld
-[10:51:58] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[模组开发演示]'/minecraft:the_nether
-[10:51:58] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[模组开发演示]'/minecraft:the_end
-[10:51:59] [Server thread/INFO] (Minecraft) dev lost connection: 连接中断
-[10:51:59] [Server thread/INFO] (Minecraft) dev退出了游戏
-[10:51:59] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[10:51:59] [Server thread/INFO] (Minecraft) Stopping server
-[10:51:59] [Server thread/INFO] (Minecraft) Saving players
-[10:51:59] [Server thread/INFO] (Minecraft) Saving worlds
-[10:51:59] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[模组开发演示]'/minecraft:overworld
-[10:51:59] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[模组开发演示]'/minecraft:the_nether
-[10:51:59] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[模组开发演示]'/minecraft:the_end
-[10:51:59] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (模组开发演示): All chunks are saved
-[10:51:59] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[10:51:59] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[10:51:59] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
-[10:51:59] [Render thread/INFO] (ChunkBuilder) Stopping worker threads
-[10:52:05] [Render thread/INFO] (Minecraft) Deleting level 模组开发演示
-[10:52:05] [Render thread/INFO] (Minecraft) Attempt 1...
-[10:52:05] [Render thread/INFO] (Minecraft) Loaded 7 recipes
-[10:52:05] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
-[10:52:07] [Render thread/INFO] (Minecraft) Stopping!
+[00:31:58] [Render thread/INFO] (Minecraft) Setting user: dev
+[00:31:58] [Render thread/INFO] (example/client) begin init: example, registries: [creativeTab, item, recipe, builtInModel]
+[00:31:58] [Render thread/INFO] (example/client) finish init: example, took 24ms
+[00:31:58] [Render thread/INFO] (Indigo) [Indigo] Different rendering plugin detected; not applying Indigo.
+[00:31:59] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.1 SNAPSHOT
+[00:31:59] [Render thread/WARN] (Sodium-NvidiaWorkarounds) Attempting to apply workarounds for the NVIDIA Graphics Driver...
+[00:31:59] [Render thread/WARN] (Sodium-NvidiaWorkarounds) If the game crashes immediately after this point, please make a bug report: https://github.com/CaffeineMC/sodium-fabric/issues
+[00:31:59] [Render thread/INFO] (Sodium-NvidiaWorkarounds) ... Successfully applied workarounds for the NVIDIA Graphics Driver!
+[00:32:01] [Render thread/INFO] (Sodium-PostlaunchChecks) OpenGL Vendor: NVIDIA Corporation
+[00:32:01] [Render thread/INFO] (Sodium-PostlaunchChecks) OpenGL Renderer: Quadro P620/PCIe/SSE2
+[00:32:01] [Render thread/INFO] (Sodium-PostlaunchChecks) OpenGL Version: 3.2.0 NVIDIA 546.01
+[00:32:02] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric (fabric-particles-v1, fabric-data-generation-api-v1, fabric-block-api-v1, fabric-mining-level-api-v1, fabric-crash-report-info-v1, example, fabric-rendering-data-attachment-v1, fabric-recipe-api-v1, fabric-api-lookup-api-v1, fabric-resource-conditions-api-v1, fabricloader, fabric-registry-sync-v0, fabric-networking-api-v1, fabric-screen-api-v1, fabric-transfer-api-v1, fabric-object-builder-api-v1, fabric-lifecycle-events-v1, fabric-events-interaction-v0, fabric-gametest-api-v1, indium, fabric-game-rule-api-v1, fabric-item-api-v1, fabric-client-tags-api-v1, fabric-key-binding-api-v1, fabric-command-api-v2, fabric-sound-api-v1, fabric-biome-api-v1, fabric-convention-tags-v1, fabric-api, fabric-transitive-access-wideners-v1, fabric-models-v0, fabric-api-base, fabric-resource-loader-v0, fabric-message-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-item-group-api-v1, lazydfu, fabric-loot-api-v2, sodium, fabric-dimensions-v1, fabric-renderer-api-v1, fabric-screen-handler-api-v1, fabric-content-registries-v0, fabric-blockrenderlayer-v1, fabric-entity-events-v1)
+[00:32:02] [Worker-Main-8/INFO] (Minecraft) Found unifont_all_no_pua-15.0.06.hex, loading
+[00:32:03] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
+[00:32:04] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[00:32:04] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[00:32:04] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek(R) Audio)
+[00:32:04] [Render thread/INFO] (Minecraft) Sound engine started
+[00:32:04] [Render thread/INFO] (Minecraft) Created: 1024x512x0 minecraft:textures/atlas/blocks.png-atlas
+[00:32:04] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/signs.png-atlas
+[00:32:04] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[00:32:04] [Render thread/INFO] (Minecraft) Created: 512x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[00:32:04] [Render thread/INFO] (Minecraft) Created: 1024x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[00:32:04] [Render thread/INFO] (Minecraft) Created: 128x64x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[00:32:04] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/chest.png-atlas
+[00:32:04] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[00:32:04] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/beds.png-atlas
+[00:32:05] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[00:32:05] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[00:32:05] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[00:32:05] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[00:32:09] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[00:32:09] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
+[00:32:18] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 2.905 ms
+[00:32:18] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20.1
+[00:32:18] [Server thread/INFO] (Minecraft) Generating keypair
+[00:32:19] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[00:32:20] [Render thread/INFO] (Minecraft) 准备生成区域中：0%
+[00:32:20] [Render thread/INFO] (Minecraft) 准备生成区域中：0%
+[00:32:20] [Render thread/INFO] (Minecraft) 准备生成区域中：22%
+[00:32:21] [Render thread/INFO] (Minecraft) 准备生成区域中：36%
+[00:32:21] [Render thread/INFO] (Minecraft) Time elapsed: 2007 ms
+[00:32:22] [Server thread/INFO] (Minecraft) Changing view distance to 16, from 10
+[00:32:22] [Server thread/INFO] (Minecraft) Changing simulation distance to 5, from 0
+[00:32:23] [Server thread/INFO] (Minecraft) dev[local:E:41596132] logged in with entity id 1 at (-7.5, -60.0, 8.5)
+[00:32:23] [Server thread/INFO] (Minecraft) dev加入了游戏
+[00:32:23] [Render thread/INFO] (ChunkBuilder) Started 6 worker threads
+[00:32:24] [Render thread/INFO] (Minecraft) Loaded 2 advancements
+[00:32:28] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[00:32:28] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[新的世界]'/minecraft:overworld
+[00:32:28] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[新的世界]'/minecraft:the_end
+[00:32:28] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[新的世界]'/minecraft:the_nether
+[00:32:29] [Server thread/INFO] (Minecraft) dev lost connection: 连接中断
+[00:32:29] [Server thread/INFO] (Minecraft) dev退出了游戏
+[00:32:29] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[00:32:29] [Server thread/INFO] (Minecraft) Stopping server
+[00:32:29] [Server thread/INFO] (Minecraft) Saving players
+[00:32:29] [Server thread/INFO] (Minecraft) Saving worlds
+[00:32:30] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[新的世界]'/minecraft:overworld
+[00:32:31] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[新的世界]'/minecraft:the_end
+[00:32:31] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[新的世界]'/minecraft:the_nether
+[00:32:31] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (新的世界): All chunks are saved
+[00:32:31] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:32:31] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:32:31] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[00:32:31] [Render thread/INFO] (ChunkBuilder) Stopping worker threads
+[00:32:33] [Render thread/INFO] (Minecraft) Deleting level 新的世界
+[00:32:33] [Render thread/INFO] (Minecraft) Attempt 1...
+[00:32:33] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[00:32:33] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
+[00:32:34] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[00:32:34] [Render thread/INFO] (Minecraft) Loaded 1271 advancements
+[00:32:38] [Render thread/INFO] (BiomeModificationImpl) Applied 0 biome modifications to 0 of 64 new biomes in 239.4 μs
+[00:32:38] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20.1
+[00:32:38] [Server thread/INFO] (Minecraft) Generating keypair
+[00:32:38] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[00:32:39] [Render thread/INFO] (Minecraft) 准备生成区域中：0%
+[00:32:39] [Render thread/INFO] (Minecraft) 准备生成区域中：11%
+[00:32:40] [Render thread/INFO] (Minecraft) 准备生成区域中：63%
+[00:32:40] [Server thread/INFO] (Minecraft) Changing view distance to 16, from 10
+[00:32:40] [Server thread/INFO] (Minecraft) Changing simulation distance to 5, from 0
+[00:32:40] [Render thread/INFO] (Minecraft) Time elapsed: 1375 ms
+[00:32:40] [Server thread/INFO] (Minecraft) dev[local:E:4939773d] logged in with entity id 138 at (9.5, -60.0, -1.5)
+[00:32:40] [Render thread/INFO] (ChunkBuilder) Started 6 worker threads
+[00:32:40] [Server thread/INFO] (Minecraft) dev加入了游戏
+[00:32:40] [Render thread/INFO] (Minecraft) Loaded 2 advancements
+[00:32:45] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[00:32:45] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[新的世界]'/minecraft:overworld
+[00:32:45] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[新的世界]'/minecraft:the_end
+[00:32:45] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[新的世界]'/minecraft:the_nether
+[00:32:46] [Server thread/INFO] (Minecraft) dev lost connection: 连接中断
+[00:32:46] [Server thread/INFO] (Minecraft) dev退出了游戏
+[00:32:46] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[00:32:46] [Server thread/INFO] (Minecraft) Stopping server
+[00:32:46] [Server thread/INFO] (Minecraft) Saving players
+[00:32:46] [Server thread/INFO] (Minecraft) Saving worlds
+[00:32:46] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[新的世界]'/minecraft:overworld
+[00:32:47] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[新的世界]'/minecraft:the_end
+[00:32:47] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[新的世界]'/minecraft:the_nether
+[00:32:47] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (新的世界): All chunks are saved
+[00:32:47] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:32:47] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:32:47] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[00:32:47] [Render thread/INFO] (ChunkBuilder) Stopping worker threads
+[00:32:48] [Render thread/INFO] (Minecraft) Stopping!
